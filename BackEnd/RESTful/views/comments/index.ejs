@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Index</title>
+</head>
+<body>
+    <h1> Comments </h1>
+    <form action="/comments/new" method="get">
+        <button> Add New Comment </button>
+    </form>
+    <ul>
+        <% for(comment of comments){ %>
+            <li> 
+                <%= comment.text %> - 
+                <strong><%= comment.username %></strong>
+                <a href="/comments/<%= comment.id %>">Details</a>
+            </li>
+        <% } %>  
+    </ul>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Examples</title>
+</head>
+<body>
+<h1> Register </h1>
+<form method=get>
+	<div>
+		<label for="firstName"> First Name: </label>
+		<input type="text" name="First Name" id = "firstName" placeholder="John" required="">
+
+		<label for="lastName"> Last Name: </label>
+		<input type="text" name="Last Name" id = "lastName" placeholder="Doe" required="">
+	</div>
+	<div>
+		<label for="male"> Male </label>
+		<input type="radio" name="Gender" id="male" value="male" required="">
+
+		<label for="female"> Female </label>
+		<input type="radio" name="Gender" id="female" value="female">
+
+		<label for="others"> Others </label>
+		<input type="radio" name="Gender" id="others" value="others">			
+	</div>
+	<div>
+		<label for="email"> Email: </label>
+		<input type="email" name="Email" id="email" required="" placeholder="your email">
+
+		<label for="password"> Password: </label>
+		<input id="password" name="Password" type="password" pattern=".{8,12}" title="8 to 12 characters" required 
+		placeholder="your password">
+	</div>
+	<div>
+		<label for="birthday"> Birthday: </label>
+		<select name="month" placeholder="Month" id="birthday">
+			<option value=""> Month </option>	
+			<option> January </option>
+			<option> February </option>
+		</select>
+
+		<select name="day" placeholder="Day" id="birthday">
+			<option value=""> Day </option>
+			<option> 1 </option>
+			<option> 2 </option>
+		</select>
+		
+		<select name="year" placeholder="Year" id="birthday">
+			<option value=""> Year </option>
+			<option> 2001 </option>
+			<option> 2002 </option>
+		</select>
+	</div>
+	<div>
+		I agree to the terms and conditions
+		<input type="checkbox" name="termsAgreement" value="agree" required="">
+	</div>	
+
+	<button> Submit </button>
+</form>
+
+
+</body>
+</html>

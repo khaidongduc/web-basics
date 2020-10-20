@@ -1,0 +1,13 @@
+# npm is a package of code for js
+# install a library by
+npm install "library name"
+
+# to install something globally, we add the -g flag
+npm install -g "library name"
+
+# to init a package.json use 
+npm init
+
+# to install all dependencies from package.json
+npm install
+# this will look at the package.json in the current directory

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+</head>
+<body>
+    <h1> Add Item </h1>
+    <form action="/products" method="post">
+        <label for="name"> NAME: </label>
+        <input type="text" name="name">
+        <br>
+        <label for="category"> CATEGORY: </label>
+        <input type="text" name="category">
+        <br>
+        <label for="price"> PRICE: </label>
+        <input type="number" name="price" step="0.01" min="0.0">
+        <br>
+        <button> SUBMIT </button>
+    </form>
+</body>
+</html>

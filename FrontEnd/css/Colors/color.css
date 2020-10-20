@@ -1,0 +1,24 @@
+/*
+using RGB in hexadecimal
+#_ _ _ _ _ _
+e.g: #000000;
+*/
+h1{
+	color: #000000;
+}
+
+/*
+using RGB
+color: rgb(red, blue, green);
+*/
+h2{
+	color: rgb(100, 0, 100);
+}
+
+/*
+using RGBA
+color: rgba(red, blue, green, transparency);
+*/
+h3{
+	color: rgba(100, 0, 100, 0.5);
+}

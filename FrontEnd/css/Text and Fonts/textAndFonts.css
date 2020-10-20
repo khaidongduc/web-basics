@@ -1,0 +1,84 @@
+/*font-family*/
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-family: Arial;
+	/*
+	font-family: "Arial";
+	*/
+}
+
+/*font-size
+unit: px, em;
+*/
+
+body {
+	/* set the root parent font size */
+	font-size: 10px
+}
+
+h1 {
+	font-size: 5.0em;
+}
+
+p{
+	font-size: 2.0em;
+}
+
+span {
+	font-size: 2.0em;
+	/* double the size of the parent element */
+}
+
+/*font-weight (how bold or light the font is)*/
+p {
+	/*
+		bold, normal, lighter
+		100 - 800
+	*/
+	font-weight: bold;
+}
+
+/*line-height*/
+
+p {
+	/*
+	this is determined by the font
+	*/
+	line-height: 1.0;
+}
+
+/*text-align
+left, center, right
+*/
+
+h1 {
+	text-align: right;
+}
+
+p:nth-of-type(1){
+	text-align: left;
+}
+
+p:nth-of-type(2){
+	text-align: center;
+}
+
+
+/*text-decoration*/
+
+p {
+	text-decoration: underline;
+}
+
+h1 {
+	text-decoration: line-through;
+}
+
+/*
+Custom Fonts
+*/
+

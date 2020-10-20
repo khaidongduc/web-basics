@@ -1,0 +1,46 @@
+/// these are for bash 
+
+///
+# pwd
+# give the full path name of the current folder
+
+///
+# man
+# give desciption of a command
+e.g: man ls
+
+/// ls
+# ls - show all the files in the current folder
+# to use ls on folder use are not inside of, we use 
+ls "path of the folder" 
+
+/// cd
+# cd - change the directory
+cd "path of the folder"
+e.g: cd "C:" - change to disk C
+# to move up an level (move to parent folder) use "cd .."
+
+///
+# mkdir - create a new directory (simlar to touch)
+mkdir "path of the directory"
+# can make several directory by 
+mkdir dir1 dir2 dir3...
+
+///
+# touch - make a new file (New-Item in powershell)  
+touch "path of the file"
+# can make several files by 
+touch file1 file2 file3...
+
+///
+# rm - to delete a specific file (permanently delete - do not move to trash)
+rm "file name"
+# can remove several files
+rm file1 file2 file3
+
+///
+# rm -rf - remove - recursive force
+# force delete a directory
+rm -rf directory 
+# can remove several directory by 
+rm -rf dir1 dir2 dir3...

@@ -1,0 +1,18 @@
+/*
+selector{
+	property: value;
+	anotherProperty: value;
+}
+*/
+h1{
+	color: red;
+}
+
+h4{
+	color: purple;
+}
+
+li{
+	color: green;
+}
+

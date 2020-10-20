@@ -1,0 +1,26 @@
+/*
+
+Type Selector: ul, li, li + a,
+^
+Class Attributes and Pseudo-Class Selectors:
+^
+.hello input[type="text"]
+^
+ID selectors
+
+if of the same specificity the one that appear later win
+*/
+
+#ok{
+	color: blue;
+}
+
+h1{
+	color: red;
+}
+
+.hi{
+	color: yellow;
+}
+
+

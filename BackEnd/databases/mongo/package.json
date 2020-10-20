@@ -1,0 +1,14 @@
+{
+  "name": "connect_to_mongo",
+  "version": "1.0.0",
+  "description": "mongo in nodejs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.10.9"
+  }
+}

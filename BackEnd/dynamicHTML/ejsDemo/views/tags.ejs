@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%- include('partials/bootstrap') %> 
+
+    <title>EJS Tags</title>
+</head>
+
+<body>
+    <%- include('partials/navbar') %> 
+    <!--  output value (in js) into the html -->
+    <h1> The <%= "<" + "%" + '=' %> tag output the value into the html </h1>
+    <h2> The number is <%=  4 + 5 %> </h2>
+    <h2> The string is <%=  'hello world'.toUpperCase() %> </h2>
+
+    <!--  control flow (in js) into the html, add js without output anything -->
+    <!-- embedding logic into ejs -->
+    <h1> The <%= "<" + "%" %> add js without adding to the html </h1>
+    <% if (num % 2 === 0) {%>
+        <h2> <%= num %> is an even number </h2>
+    <% } else { %>
+        <h2> <%= num %> is an odd number </h2>
+    <% } %> 
+
+</body>
+
+</html>

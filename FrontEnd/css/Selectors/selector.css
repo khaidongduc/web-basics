@@ -1,0 +1,197 @@
+body{
+	background: orange;
+}
+
+li{
+	border: red 2px solid;
+}
+
+/* 
+To use an id, 
+#idName{
+	property1:value1;
+	...
+}
+*/
+#essayWriting{
+	color: red;
+	background: yellow;
+	border: blue 5px dashed;
+}
+
+
+/*
+to use a class
+.className{
+	property1:value1;
+	...
+}
+*/
+.lessImportant{
+	text-decoration: line-through;
+	color: purple;
+	background: green;
+	border: pink 6px solid;
+}
+
+/*
+* tag
+apply to everything
+*/
+*{
+	border: lightgray 1px solid;
+}
+
+/*
+Descendant selectors
+*/
+
+li input{
+	color: purple
+}
+
+/*
+Adjacent Selectors
+select ul that comes right after the h1 (in the same level)
+*/
+
+h1 + ul {
+	border: 4px solid red;
+}
+
+/*
+Direct Descedant selector
+select the li that is the direct descendant of the ul (1 level down)
+*/
+ul > li{
+	border: 4px solid red;
+}
+
+/*
+Attributes Selectors
+*/
+input[type="checkbox"]{
+	height: 25px;
+  	width: 25px;
+} 
+
+/* Pseudo class */
+
+/*
+:nth of type
+apply style to the nth element of a type
+can apply to odd or even or specific number by pass in a function(e.g: 3n)
+*/
+li:nth-of-type(2){
+	background: white;
+}
+
+li:nth-of-type(even){
+	background: red;
+}
+
+li:nth-of-type(3n){
+	background: red;
+}
+
+/*
+:nth-child
+apply style to the nth child of a type
+can apply to odd or even or specific number by pass in a function(e.g: 3n)
+*/
+ul:nth-child(2){
+	background: white;
+}
+
+ul:nth-child(even){
+	background: red;
+}
+
+ul:nth-child(3n){
+	background: red;
+}
+
+/*
+:not() represents elements that do not match a list of selectors. 
+it prevents specific items from being selected, (negation pseudo-class).
+a selector gp inside ()
+*/
+:not(h1, body){
+	padding-left: 20%;
+}
+
+/* 
+:checked
+change style when element is checked
+*/
+
+input[type="checkbox"]:checked{
+	width: 50px;
+	height: 50px
+}
+
+
+/*
+:hover
+change style when element is hovered on
+
+*/
+h1:hover{
+	color: pink;
+}
+
+/* 
+:active
+change style when element is active
+*/
+button:active{
+	background-color: black;
+}
+
+/* 
+Pseudo Elements
+*/
+
+/* 
+::after
+choose after the content of each element
+*/
+p::after{
+	content: "Remember Me";
+	color: papayawhip;
+}
+
+
+/* 
+::before
+choose after the content of each element
+*/
+h1::before{
+	content: "Remember Me ";
+	color: seagreen;
+}
+
+/* 
+::first-letter
+select the first letter of some selection
+*/
+h1::first-letter{
+	color: steelblue;
+}
+
+
+/* 
+::first-line
+select the first line of some selection
+*/
+p::first-line{
+	color: steelblue;
+}
+
+/* 
+::selection
+style the selection of current selector
+*/
+p::selection{
+	background-color: brown;
+}

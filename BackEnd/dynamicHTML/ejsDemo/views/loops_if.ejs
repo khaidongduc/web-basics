@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%- include('partials/bootstrap') %> 
+
+    <title>Loops and If</title>
+</head>
+
+<body>
+    <%- include('partials/navbar') %> 
+    <!-- if -->
+    <% if (num % 2 === 0) {%>
+    <h2> <%= num %> is an even number </h2>
+    <% } else { %>
+    <h2> <%= num %> is an odd number </h2>
+    <% } %>
+
+    <!-- loops -->
+    <ul>
+        <% for(var i = 0 ; i < num; ++ i) { %>
+        <li><%= i %></li>
+        <% } %>
+    </ul>
+</body>
+
+</html>

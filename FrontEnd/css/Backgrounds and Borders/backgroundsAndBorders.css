@@ -1,0 +1,37 @@
+
+/*
+selector{
+	background: color;
+}
+*/
+body{
+	background: pink;
+}
+
+/*
+if the pic is not big enough, the backgrounds is tiled if there are no repeat tag
+selector{
+	background: url(some url);
+}
+*/
+body{
+	background: url(https://flyingarchitecture.com/storage/images/4224/1204_Oak_Wood_preview_0001_Oak_Wood_Bump.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*
+borders has 3 value width, color, style
+need all 3 to works
+*/
+h1{
+	color: red;
+	border-color: blue;
+	border-width: 10px;
+	border-style: solid; 
+}
+
+p{
+	color: red;
+	border: pink 6px dashed;
+}

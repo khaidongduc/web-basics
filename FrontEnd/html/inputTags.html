@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Input Tags </title>
+</head>
+<body>
+<!-- To send the data, we would need a name and a value -->
+
+<form>
+	<p> Do you prefer cats or dogs? </p>
+	<label for="cats" name="petChoices"> Cats </label>
+	<input type="radio" name="petChoices" id="cats" value="CAT">
+	<label for="dogs" name="petChoices"> Dogs </label>
+	<input type="radio" name="petChoices" id="dogs" value="DOG">
+
+	<p> What is your favourite color? </p>
+	<select name="color">
+		<option> Red </option>
+		<option> Yellow </option>
+		<option> Blue </option>
+	</select>
+
+	<p> What is your mood? </p>
+	<select name="mood">
+		<option value="happy"> :) </option>
+		<option value="neutral"> :| </option>
+		<option value="sad"> :( </option>
+	</select>
+
+	<p> Write something </p>
+	<textarea name = "paragraph" labelholder="Write Here" rows="10", cols="50"></textarea>
+	
+	<p> </p>
+	<button> Submit </button>
+</form>
+
+
+</body>
+</html>

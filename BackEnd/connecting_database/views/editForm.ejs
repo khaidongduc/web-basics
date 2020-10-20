@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT <%= product._id %></title>
+</head>
+
+<body>
+    <h1> EDIT FORM </h1>
+    <form method="post" action='/products/<%= product._id %>?_method=PATCH'>
+        <label for="name"> NAME: </label>
+        <textarea name="name"><%= product.name %></textarea>
+        <br>
+        <label for="category"> CATEGORY: </label>
+        <textarea name="category"><%= product.category %></textarea>
+        <br>
+        <label for="price"> PRICE: </label>
+        <textarea name="price"><%= product.price %></textarea>
+        <br>
+        <button> SUBMIT </button>
+    </form>
+    <a href="/products/<%= product._id %> ">BACK</a>
+</body>
+
+</html>
